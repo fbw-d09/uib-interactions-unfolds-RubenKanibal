@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    height: 200px;
+    width: 200px;
+    position: relative;
+    transform: all 1s ease;
+}
+
+.message {
+    font-family: sans-serif;
+    font-size: 30px;
+    text-align: center;
+    line-height: 200px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+.box-1 {
+    position: absolute;
+    top: 0;
+    background-color: steelblue;
+}
+
+.box-2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: dimgray;
+}
+
+.box-3 {
+    position: absolute;
+    bottom: 0;
+    background-color: yellow;
+}
+
+.box-4 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rosybrown;
+}
+
+/* Transofrm: */
+
+main:hover .box-1 {
+    transition: 1s;
+    transform: rotate(90deg) translate(0, 100px);
+    
+}
+
+main:hover .box-2 {
+    transition: 1s;
+    transform: rotate(-90deg) translate(0, 100px);
+    
+}
+
+main:hover .box-3 {
+    transition: 1s;
+    transform: rotate(-90deg) translate(0, -100px);
+    
+}
+
+main:hover .box-4 {
+    transition: 1s;
+    transform: rotate(90deg) translate(0, -100px);
+    
+}
